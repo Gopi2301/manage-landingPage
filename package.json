@@ -10,5 +10,17 @@
   },
   "devDependencies": {
     "vite": "^4.4.0"
-  }
+  },
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gopi2301/manage-landingPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gopi2301/manage-landingPage/issues"
+  },
+  "homepage": "https://github.com/Gopi2301/manage-landingPage#readme",
+  "description": ""
 }

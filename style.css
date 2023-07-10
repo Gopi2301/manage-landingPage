@@ -179,9 +179,25 @@ body {
   display: none;
 }
 
+.nav-list {
+  display: flex;
+  gap: clamp(var(--size-400), 5vw, var(--size-700));
+  font-weight: var(--fw-semi-bold);
+}
 
 .nav-list {
   font-size: var(--fs-nav);
+
+}
+
+.nav-list a {
+  color: var(--clr-primary-400);
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--clr-accent-400);
 
 }
 
@@ -190,6 +206,7 @@ body {
     display: none;
     position: fixed;
     padding: var(--size-700);
+
     inset: 7rem var(--size-400) auto;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
@@ -211,16 +228,7 @@ body {
     font-weight: var(--fw-bold);
   }
 
-  .nav-list a {
-    color: var(--clr-primary-400);
-    text-decoration: none;
-  }
 
-  .nav-list a:hover,
-  .nav-list a:focus {
-    color: var(--clr-accent-400);
-
-  }
 
   .primary-navigation[data-visible] {
     display: block;

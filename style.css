@@ -469,6 +469,10 @@ p[data-width='wide'] {
   padding-block: var(--size-700);
 }
 
+.margin-bottom-700 {
+  margin-block-end: var(--size-700);
+}
+
 .display-sm-none {
   display: none;
 }
@@ -527,5 +531,9 @@ p[data-width='wide'] {
 @media (max-width:50em) {
   .text-center-sm-only {
     text-align: center;
+  }
+
+  .text-center-sm-only p {
+    margin-inline: auto;
   }
 }

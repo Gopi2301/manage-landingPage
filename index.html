@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <title>Vite App</title>
@@ -99,9 +100,22 @@
         </div>
       </div>
     </section>
-    <section class="carousel | padding-block-700">
+    <section class="carousel | padding-block-700 text-center">
       <h2 class="fs-secondary-heading fw-bold"> What they've said</h2>
-      <!-- carousel here -->
+      <ul class="slider">
+        <li>
+          <img src="images/avatar-ali.png" alt="">
+
+          <h3 class="fw-bold">Ali Bravo</h3>
+          <p data-width="wide">"We are able to cancel so many subcription. since using Manage. There is no more
+            cross-channel
+            confusion and everyone is much
+            more focused." </p>
+        </li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
       <button class="button">Get Started</button>
     </section>
     <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
@@ -167,6 +181,7 @@
     </div>
   </footer>
   <script type="module" src="/main.js"></script>
+  <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
 </body>
 
 </html>

@@ -215,11 +215,17 @@ p[data-width='wide'] {
 }
 
 @media (max-width:47em) {
+  .primary-header[data-overlay] {
+    position: relative;
+    z-index: 999;
+  }
+
   .primary-navigation {
     display: none;
     position: fixed;
     padding: var(--size-700);
-    margin-left: auto;
+    margin-inline: auto;
+    z-index: 999;
     max-width: 25rem;
     inset: 7rem var(--size-400) auto;
     background: var(--clr-neutral-100);
@@ -257,9 +263,14 @@ p[data-width='wide'] {
     background: transparent;
     border: 0;
     padding: 0.5em;
+    aspect-ratio: 1;
+    width: 1.7rem;
+    background-image: url('images/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  .mobile-nav-toggle .icon-close {
+  .mobile-nav-toggle[aria-expen] .mobile-nav-toggle .icon-close {
     display: none;
 
   }
